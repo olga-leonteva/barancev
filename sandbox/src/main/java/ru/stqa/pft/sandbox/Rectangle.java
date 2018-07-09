@@ -8,4 +8,8 @@ public class Rectangle {
     this.a = a; // значение атрибкута равно значению параметра а
     this.b = b;
   }
+
+  public  double area (){
+    return this.a * this.b;
+  }
 }
