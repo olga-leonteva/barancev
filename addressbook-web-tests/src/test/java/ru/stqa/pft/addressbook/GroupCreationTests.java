@@ -27,7 +27,7 @@ public static WebDriver driver;
 
   public static void setUpDriver() throws Exception {
     driver = setUpChromeDriver();
-    driver.get("http://localhost/addressbook/");
+    driver.get("http://localhost:8080/addressbook/");
     login("admin", "secret");
 
   }
@@ -101,6 +101,7 @@ public static WebDriver driver;
   private void goToGroupPage() {
     driver.findElement(By.linkText("groups")).click();
   }
+
 
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
